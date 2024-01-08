@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+
+        /*  seletores personalizados
+            #    =   id
+            .    =   class
+            :    =   pseudo-class
+            ::   =   pseudo-element
+            >    =   children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        } 
+
+        a:visited {
+            color: rgb(81, 89, 199)
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        } 
+        
+        a::before {
+            content:'⇀'
+        }
+
+        a::after {
+            content:' [link]';
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: light;
+            color: rgb(173, 228, 230);
+        }
+
+        .especial {
+            background-color: bisque;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Infeitando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial">Repositório do YouTube</a></li>
+        <li><a href="https://www.google.com.br/" target="_blank">Google</a></li>
+        <li><a href="https://animesonlinecc.to/" target="_blank" class="especial">Site de Animes</a></li>
+    </ul>
+</body>
+</html>
